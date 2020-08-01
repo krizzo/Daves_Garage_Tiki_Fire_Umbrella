@@ -4,11 +4,6 @@
 #define GREEN_PIN 17
 #define BLUE_PIN 18
 
-// Stage 1: Basic Red blinking LED                            https://youtu.be/rlqbVttV0gI?t=379
-// Stage 2: Using PWM (Pulse Width Modulation) to dim the LED https://youtu.be/rlqbVttV0gI?t=828
-// Stage 3: Rainbows!                                         https://youtu.be/rlqbVttV0gI?t=966
-
-
 // Stage 3: BEGIN RGB Function
 // https://www.instructables.com/id/How-to-Use-an-RGB-LED/
 // function to convert a color to its Red, Green, and Blue components.
@@ -71,7 +66,6 @@ void hueToRGB( uint8_t hue, uint8_t brightness)
     }
 }
 // Stage 3: END RGB Function
-
 
 void setup()
 {
