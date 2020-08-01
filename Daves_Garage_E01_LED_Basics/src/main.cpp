@@ -8,16 +8,16 @@
 // https://www.instructables.com/id/How-to-Use-an-RGB-LED/
 // function to convert a color to its Red, Green, and Blue components.
 
-const boolean invert = true; // set true if common anode, false if common cathode
-uint32_t R, G, B;  // the Red Green and Blue color components
+const boolean invert = true;    // set true if common anode, false if common cathode
+uint32_t R, G, B;               // the Red Green and Blue color components
 
 void hueToRGB( uint8_t hue, uint8_t brightness)
 {
     uint16_t scaledHue = (hue * 6);
-    uint8_t segment = scaledHue / 256; // segment 0 to 5 around the
+    uint8_t segment = scaledHue / 256;      // segment 0 to 5 around the
                                             // color wheel
     uint16_t segmentOffset =
-      scaledHue - (segment * 256); // position within the segment
+      scaledHue - (segment * 256);          // position within the segment
 
     uint8_t complement = 0;
     uint16_t prev = (brightness * ( 255 -  segmentOffset)) / 256;
@@ -78,13 +78,13 @@ void setup()
   // digitalWrite(BLUE_PIN,  HIGH);
 
   // Stage 2 and Stage 3
-  ledcAttachPin(RED_PIN, 1); // Set PWM gen for LED RED
+  ledcAttachPin(RED_PIN, 1);        // Set PWM gen for LED RED
   ledcSetup(1, 12000, 8);
 
   // Stage 3
-  ledcAttachPin(GREEN_PIN, 2); // Set PWM gen for LED GREEN
+  ledcAttachPin(GREEN_PIN, 2);      // Set PWM gen for LED GREEN
   ledcSetup(2, 12000, 8);
-  ledcAttachPin(BLUE_PIN, 3); // Set PWM gen for LED BLUE
+  ledcAttachPin(BLUE_PIN, 3);       // Set PWM gen for LED BLUE
   ledcSetup(3, 12000, 8);
 }
 
@@ -103,7 +103,7 @@ void loop()
   // delay(9);
 
   // Stage 2: Using PWM (Pulse Width Modulation) to pulse the LED
-  // ledcWrite(1,0);
+  // ledcWrite(1, 0);
   // delay(100);
   // ledcWrite(1, 256);
   // delay(100);

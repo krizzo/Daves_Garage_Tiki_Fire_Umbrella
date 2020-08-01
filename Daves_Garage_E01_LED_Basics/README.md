@@ -1,4 +1,4 @@
-# LED basics
+# Episode 01 : LED basics
 
 This code has 3 or more stages, it all depends how your mind works. I suggest watching the video from the beginning and trying to figure it out as Dave goes. I've included links below to the different sections of the video for quick reference.
 
