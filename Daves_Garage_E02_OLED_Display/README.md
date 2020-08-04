@@ -1,4 +1,12 @@
-# Episode 02 : OLED display basics
+# Episode 02 OLED display basics
+
+## Table of Contents
+
+- [Episode 02 OLED display basics](#episode-02-oled-display-basics)
+  - [Table of Contents](#table-of-contents)
+  - [Sections of code and video links](#sections-of-code-and-video-links)
+    - [Starting Code](#starting-code)
+    - [Stage 2](#stage-2)
 
 This builds upon the first episode and doesn't go into detail on setting up the library. Watch Dave's video to get a better understanding. I had a breadboard and dupont wires already so I figured save me some time buying another ESP I just bought a cheap pack of SSD1306 displays and used the ezsbc from Episode 01.
 
@@ -32,7 +40,11 @@ You should refer to your chips data sheet for IO pins you can use
 
 ```
 
-## Stage 1
+## Sections of code and video links
+
+main.cpp will have the final code from the end of the video. Each section below will have the full code for that portion as a "check box" state to see what things are doing or as a reference for your own code you type up.
+
+### Starting Code
 
 Basic status LED blinking. https://youtu.be/W_gwDvxt7zc?t=535
 
@@ -81,7 +93,7 @@ void loop()
 }
 ```
 
-## Stage 2
+### Stage 2
 
 Use U8G2 to write Hello World and then display the font height. https://youtu.be/W_gwDvxt7zc?t=622
 

@@ -1,10 +1,23 @@
-# Episode 01 : LED basics
+# Episode 01 LED basics
+
+## Table of Contents
+
+- [Episode 01 LED basics](#episode-01-led-basics)
+  - [Table of Contents](#table-of-contents)
+  - [Sections of code and video links](#sections-of-code-and-video-links)
+    - [Starting Code](#starting-code)
+    - [Stage 2](#stage-2)
+    - [Stage 3](#stage-3)
 
 This code has 3 or more stages, it all depends how your mind works. I suggest watching the video from the beginning and trying to figure it out as Dave goes. I've included links below to the different sections of the video for quick reference.
 
 I made comments in the code for each stage you just uncomment the code for the stage you're working on and comment all other stages, of course you can ignore the stage 3 function and global settings as they become noops.
 
-## Stage 1
+## Sections of code and video links
+
+main.cpp will have the final code from the end of the video. Each section below will have the full code for that portion as a "check box" state to see what things are doing or as a reference for your own code you type up.
+
+### Starting Code
 
 Basic Red blinking LED https://youtu.be/rlqbVttV0gI?t=379
 
@@ -37,7 +50,7 @@ void loop()
 }
 ```
 
-## Stage 2
+### Stage 2
 
 Using PWM (Pulse Width Modulation) to dim the LED https://youtu.be/rlqbVttV0gI?t=828
 
@@ -71,7 +84,7 @@ void loop()
 
 ```
 
-## Stage 3
+### Stage 3
 
 Rainbows! https://youtu.be/rlqbVttV0gI?t=966
 
