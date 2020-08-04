@@ -65,7 +65,6 @@ void hueToRGB( uint8_t hue, uint8_t brightness)
     break;
     }
 }
-// Stage 3: END RGB Function
 
 void setup()
 {
@@ -73,15 +72,8 @@ void setup()
   pinMode(GREEN_PIN, OUTPUT);
   pinMode(BLUE_PIN,  OUTPUT);
 
-  // Stage 1 and Stage 2
-  // digitalWrite(GREEN_PIN, HIGH);
-  // digitalWrite(BLUE_PIN,  HIGH);
-
-  // Stage 2 and Stage 3
   ledcAttachPin(RED_PIN, 1);        // Set PWM gen for LED RED
   ledcSetup(1, 12000, 8);
-
-  // Stage 3
   ledcAttachPin(GREEN_PIN, 2);      // Set PWM gen for LED GREEN
   ledcSetup(2, 12000, 8);
   ledcAttachPin(BLUE_PIN, 3);       // Set PWM gen for LED BLUE
@@ -90,25 +82,6 @@ void setup()
 
 void loop()
 {
-  // Stage 1: Select the color red and have it blink on/off LOW/HIGH state change every 1 second
-  // digitalWrite(RED_PIN, LOW);
-  // delay(1000);
-  // digitalWrite(RED_PIN, HIGH);
-  // delay(1000);
-
-  // Stage 1: Dimming the LED by blinking faster
-  // digitalWrite(RED_PIN, LOW);
-  // delay(1);
-  // digitalWrite(RED_PIN, HIGH);
-  // delay(9);
-
-  // Stage 2: Using PWM (Pulse Width Modulation) to pulse the LED
-  // ledcWrite(1, 0);
-  // delay(100);
-  // ledcWrite(1, 256);
-  // delay(100);
-
-  // Stage 3: Rainbows!
   for(int c = 0; c < 256; c++){
     hueToRGB(c, 64);
     ledcWrite(1, R);

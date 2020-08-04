@@ -11,7 +11,7 @@
 #define OLED_CLOCK 22
 #define OLED_RESET 255                                                      // This value is pulled from the default defined in the constructor.
 // U8G2_SSD1306_128X64_NONAME_F_SW_I2C g_OLED(U8G2_R2, OLED_CLOCK, OLED_DATA, OLED_RESET); // Stages 1 to 6: Set the OLED display object, stage 6 I got a rate of 9 fps
-U8G2_SSD1306_128X64_NONAME_F_HW_I2C g_OLED(U8G2_R2, OLED_RESET, OLED_CLOCK, OLED_DATA); // Stage 6.5: Optimization Set the OLED display object, jumpped to 27 fps
+U8G2_SSD1306_128X64_NONAME_F_HW_I2C g_OLED(U8G2_R0, OLED_RESET, OLED_CLOCK, OLED_DATA); // Stage 6.5: Optimization Set the OLED display object, jumpped to 27 fps
 int g_line_height = 0;                                                      // Init the line hight for font calculation
 
 void write_led(int brightness = 0, bool invert = false)                   // Helper Function: Set an RGB LED to white and dimmed
